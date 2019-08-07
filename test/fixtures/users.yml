@@ -1,1 +1,3 @@
-# empty
+nick_bond:
+  username: NickBond
+  password_digest: <%= User.digest('password') %>
