@@ -1,0 +1,11 @@
+<li id="photo-<%= photo.id %>">
+  <span class="content"><b><%= photo.caption %></b></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(photo.created_at) %> ago.
+  </span>
+  <span class="content"><%= photo.subject %></span>
+  <%= image_tag photo.picture.url if photo.picture? %>
+  <% if logged_in? %>
+    <%= link_to "delete", photo_catalogue_path(:id => photo.id), method: :delete, data: { confirm: "Are you sure?" } %>
+  <% end %>
+</li>

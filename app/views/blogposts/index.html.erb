@@ -1,0 +1,20 @@
+<% provide(:title, "Blog") %>
+
+<div class="center">
+  <h1>Blog</h1>
+  
+  <% if logged_in? %>
+    <div class="row">
+        <section class="blogpost_form">
+          <%= render 'blogposts/blogpost_form', locals: {blogpost: @blogpost} %>
+        </section>
+    </div>
+  <% end %>
+  
+  <% unless @blogposts == nil || @blogposts.empty? %>
+    <ol class="blogposts">
+      <%= render @blogposts %>
+    </ol>
+    <%= will_paginate @blogposts %>
+  <% end %>
+</div>

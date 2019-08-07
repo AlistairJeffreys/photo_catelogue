@@ -1,0 +1,19 @@
+photo1:
+  subject: "Things I like"
+  caption: "Cars, Photos and Cars"
+  created_at: <%= 15.minutes.ago %>
+
+photo2:
+  subject: "New Website"
+  caption: "Welcome to my new website"
+  created_at: <%= 2.years.ago %>
+
+photo3:
+  subject: "My pet has died"
+  caption: "My pet dog was hit by a pigeon"
+  created_at: <%= 3.hours.ago %>
+
+most_recent:
+  subject: "Greetings"
+  caption: "Just loving life"
+  created_at: <%= Time.zone.now %>

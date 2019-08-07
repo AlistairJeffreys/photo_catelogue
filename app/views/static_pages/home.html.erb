@@ -5,4 +5,29 @@
   <p>
     Nick Bond's Photography website where you can view my work and read my blog. Enjoy!
   </p>
+
+  <% unless @blogpost == nil %>
+    <h1>Latest Blog Post</h1>
+    <li id="blogpost-<%= @blogpost.id %>">
+      <span class="content"><b><%= @blogpost.title %></b></span>
+      <span class="timestamp">
+        Posted <%= time_ago_in_words(@blogpost.created_at) %> ago.
+      </span>
+      <span class="content"><%= @blogpost.content %></span>
+    </li>
+  <% end %>
+  
+  <% unless @photo == nil %>
+    <h1>Latest Photograph</h1>
+    <li id="photo-<%= @photo.id %>">
+      <span class="content"><b><%= @photo.subject %></b></span>
+      <span class="timestamp">
+        Posted <%= time_ago_in_words(@photo.created_at) %> ago.
+      </span>
+      <span class="content"><%= @photo.caption %></span>
+      <%= image_tag @photo.picture.url if @photo.picture? %>
+    </li>
+  <% end %>
 </div>
+
+

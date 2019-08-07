@@ -165,3 +165,54 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* blogposts */
+
+.blogposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #403f3f;
+  }
+  .content {
+    display: block;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+
+/* photos */
+
+.photos {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #403f3f;
+  }
+  .content {
+    display: block;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}

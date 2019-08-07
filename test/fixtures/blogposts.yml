@@ -1,0 +1,19 @@
+blog1:
+  title: "Things I like"
+  content: "Cars, Photos and Cars"
+  created_at: <%= 15.minutes.ago %>
+
+blog2:
+  title: "New Website"
+  content: "Welcome to my new website"
+  created_at: <%= 2.years.ago %>
+
+blog3:
+  title: "My pet has died"
+  content: "My pet dog was hit by a pigeon"
+  created_at: <%= 3.hours.ago %>
+
+most_recent:
+  title: "Greetings"
+  content: "Just loving life"
+  created_at: <%= Time.zone.now %>

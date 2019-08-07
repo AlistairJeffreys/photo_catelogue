@@ -1,0 +1,20 @@
+<% provide(:title, "Photo Catalogue") %>
+
+<div class="center">
+  <h1>Photo Catalogue</h1>
+  
+  <% if logged_in? %>
+    <div class="row">
+        <section class="photo_form">
+          <%= render 'photos/photo_form', locals: {photo: @photo} %>
+        </section>
+    </div>
+  <% end %>
+  
+  <% unless @photos == nil || @photos.empty? %>
+    <ol class="photos">
+      <%= render @photos %>
+    </ol>
+    <%= will_paginate @photos %>
+  <% end %>
+</div>

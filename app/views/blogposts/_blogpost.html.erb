@@ -1,0 +1,10 @@
+<li id="blogpost-<%= blogpost.id %>">
+  <span class="content"><b><%= blogpost.title %></b></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(blogpost.created_at) %> ago.
+  </span>
+  <span class="content"><%= blogpost.content %></span>
+  <% if logged_in? %>
+    <%= link_to "delete", blog_path(:id => blogpost.id), method: :delete, data: { confirm: "Are you sure?" } %>
+  <% end %>
+</li>
