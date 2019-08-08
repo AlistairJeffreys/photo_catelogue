@@ -54,6 +54,138 @@ Photo.create(
               picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (7).jpg")
             )
             
+Photo.create(
+              subject: "Events",
+              caption: "Rugby match",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (8).jpg")
+            )
+            
+Photo.create(
+              subject: "Landscapes",
+              caption: "Misty river",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (9).jpg")
+            )
+            
+Photo.create(
+              subject: "Landscapes",
+              caption: "Snowy mountains",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (10).jpg")
+            )
+          
+Photo.create(
+              subject: "Landscapes",
+              caption: "Bridge at nightime",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (11).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Butterfly on a flower",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (12).jpg")
+            )
+          
+Photo.create(
+              subject: "Buildings",
+              caption: "Big Ben",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (13).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Working horses plowing",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (14).jpg")
+            )
+          
+Photo.create(
+              subject: "Vehicles",
+              caption: "British Airways jet plane",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (15).jpg")
+            )
+            
+Photo.create(
+              subject: "Buildings",
+              caption: "Bridge in Scotland",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (16).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Butterfly on another flower",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (17).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Red kite in flight",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (18).jpg")
+            )
+        
+Photo.create(
+              subject: "Buildings",
+              caption: "Tower bridge",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (19).jpg")
+            )
+            
+Photo.create(
+              subject: "Landscapes",
+              caption: "Sunset from a field",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (20).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Owl standing around",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (21).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Swan in a lake",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (22).jpg")
+            )
+            
+Photo.create(
+              subject: "Events",
+              caption: "Chariot race",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (23).jpg")
+            )
+            
+Photo.create(
+              subject: "Vehicles",
+              caption: "Steam train at a station",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (24).jpg")
+            )
+            
+Photo.create(
+              subject: "Vehicles",
+              caption: "Bi-plane on a grass runway",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (25).jpg")
+            )
+            
+Photo.create(
+              subject: "Vehicles",
+              caption: "Rolls-Royce in a fied",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (26).jpg")
+            )
+          
+Photo.create(
+              subject: "Animals",
+              caption: "A stag in autumn",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (27).jpg")
+            )
+      
+Photo.create(
+              subject: "Vehicles",
+              caption: "White Land Rover",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (28).jpg")
+            )
+            
+Photo.create(
+              subject: "Landscapes",
+              caption: "Sea batters a lighthouse",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (29).jpg")
+            )
+            
             
             
             

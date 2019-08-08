@@ -1,7 +1,7 @@
 <li id="blogpost-<%= blogpost.id %>">
   <span class="content"><b><%= blogpost.title %></b></span>
   <span class="timestamp">
-    Posted <%= time_ago_in_words(blogpost.created_at) %> ago.
+    <%= blogpost.created_at.strftime("%d/%m/%Y") %>
   </span>
   <span class="content"><%= blogpost.content %></span>
   <% if logged_in? %>

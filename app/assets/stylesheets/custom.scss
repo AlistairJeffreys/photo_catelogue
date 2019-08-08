@@ -199,7 +199,6 @@ aside {
   padding: 0;
   li {
     padding: 10px 0;
-    border-top: 1px solid #403f3f;
   }
   .content {
     display: block;
@@ -208,6 +207,11 @@ aside {
     color: $gray-light;
     display: block;
   }
+  display: inline-block;
+}
+
+.photo {
+  display: inline-flex;
 }
 
 aside {
@@ -215,4 +219,34 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
+}
+
+.photo-wrap {
+  padding: 10px;
+  text-align: center;
+  position: relative;  
+}
+
+.photo-display {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-display img {
+  display: block;
+}
+
+.search {
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+}
+
+.home-page-data {
+  width: 50%;
+}
+
+.dynamic-home-data {
+  width: 80%;
 }

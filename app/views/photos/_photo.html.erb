@@ -1,10 +1,16 @@
-<li id="photo-<%= photo.id %>">
-  <span class="content"><b><%= photo.caption %></b></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(photo.created_at) %> ago.
-  </span>
-  <%= image_tag photo.picture.url if photo.picture? %>
-  <% if logged_in? %>
-    <%= link_to "delete", photo_catalogue_path(:id => photo.id), method: :delete, data: { confirm: "Are you sure?" } %>
-  <% end %>
+<li id="photo-<%= photo.id %>" class="photo">
+  <div class="photo-wrap">
+    <div class="photo-display">
+      <%= image_tag(photo.picture.url, height: '400') if photo.picture? %>
+      <div class="photo-caption">
+        <span class="content"><b><%= photo.caption %></b></span>
+        <span class="timestamp">
+          <%= photo.created_at.strftime("%d/%m/%Y") %>
+        </span>
+        <% if logged_in? %>
+          <%= link_to "delete", photo_catalogue_path(:id => photo.id), method: :delete, data: { confirm: "Are you sure?" } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </li>
