@@ -11,6 +11,15 @@
     </div>
   <% end %>
   
+  <h4> Search </h4>
+  <%= form_tag(photo_catalogue_path, method: :get) do %>
+    <%= select_tag(:search, options_for_select(["All"] + all_subjects), include_blank: params["search"]) %>
+    <%= submit_tag ("Search") %>
+  <% end %>
+  <%= form_tag(photo_catalogue_path, method: :get) do %>
+    <%= submit_tag ("All") %>
+  <% end %>
+  
   <% unless @photos == nil || @photos.empty? %>
     <ol class="photos">
       <%= render @photos %>

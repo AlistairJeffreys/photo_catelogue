@@ -3,7 +3,12 @@ class PhotosController < ApplicationController
   
   def index
     @photo = Photo.new if logged_in?
-    @photos = Photo.all.paginate(page: params[:page])
+    search = search_params[:search]
+    if search && (search != "All" && search != "") 
+      @photos = Photo.where(subject: search).paginate(page: params[:page])
+    else
+      @photos = Photo.all.paginate(page: params[:page])
+    end
   end
   
   def create
@@ -21,6 +26,10 @@ class PhotosController < ApplicationController
   end
   
   private
+  
+    def search_params
+      params.permit(:search)
+    end
   
     def photo_params
       params.require(:photo).permit(:subject, :caption, :picture)

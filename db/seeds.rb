@@ -29,3 +29,46 @@ Photo.create(
               caption: "Goose in water",
               picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (3).jpg")
             )
+            
+Photo.create(
+              subject: "Events",
+              caption: "Chariot in a river",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (4).jpg")
+            )
+            
+Photo.create(
+              subject: "Landscapes",
+              caption: "Poppy over a WW1 cemetary",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (5).jpg")
+            )
+            
+Photo.create(
+              subject: "Animals",
+              caption: "Grey squirrel in a tree",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (6).jpg")
+            )
+
+Photo.create(
+              subject: "People",
+              caption: "Royal Blue horse guard",
+              picture: File.open(Rails.root + "app/assets/images/photos/IMAGE (7).jpg")
+            )
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
